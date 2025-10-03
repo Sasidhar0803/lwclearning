@@ -1,0 +1,15 @@
+<template>
+    <lightning-card>
+        <lightning-input 
+        label="Enter  account name"
+        value = {accountname}
+        onchange = {handlechange}
+        ></lightning-input>
+         <lightning-button 
+          variant="base"
+          label="Search" 
+          onclick={handleClick} 
+        ></lightning-button>
+        <c-childcomponent Accounts = {accountdata}></c-childcomponent>
+    </lightning-card>
+</template>
